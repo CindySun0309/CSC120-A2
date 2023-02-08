@@ -1,3 +1,6 @@
+__author__ = "Cindy Sun"
+__course__ = "CSC120"
+
 from computer import *
 
 class ResaleShop:
@@ -77,6 +80,13 @@ def main():
 
      #myStore.sell(c1)
      #myStore.print_inventory()
+
+
+     c3 = Computer("Something", "?", "no idea", "Great", "OK", "Nice", "Any")
+     
+     myStore.print_inventory()
+     
+     
 
 
 

@@ -1,3 +1,6 @@
+__author__ = "Cindy Sun"
+__course__ = "CSC120"
+
 class Computer:
 
     # What attributes will it need?
@@ -28,5 +31,6 @@ class Computer:
         print("Operating System:", self.operating_system)
         print("Year Made:", self.year_made)
         print("Price:", self.price)
+
 
 
