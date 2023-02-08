@@ -35,14 +35,14 @@ class ResaleShop:
     #refurbishing a computer (update price based on age of machine, optionally update OS)
     def refurbish(self, computer:Computer):
         if computer in self.inventory:
-            if computer["year_made"] < 2000:
-                computer["price"] = 0
-            elif computer["year_made"] < 2010:
-                computer["price"] = 250
-            elif computer["year_made"] < 2020:
-                computer["price"] = 500
+            if computer.year_made < 2000:
+                computer.price = 0
+            elif computer.year_made < 2010:
+                computer.price = 250
+            elif computer.year_made < 2020:
+                computer.price = 500
             else:
-                computer["price"] = 900
+                computer.price = 900
         else:
             print("Item", computer, "not found. Please select another item to refurbish.")
 
@@ -56,7 +56,7 @@ def main():
 
      c2= Computer("Mac (Late 1990)",
         "Something",
-        100, 64, "Something", 1990, 300)
+        100, 64, "Something", 1990, 400)
      #c2.print_computer()
 
      myStore.buy(c1)
